@@ -7,14 +7,16 @@ public class PositiveTicketTC {
         WebDriver driver=myBrowser.invokeChromeBrowser();
         driver.get("http://www.facebook.com");
         Thread.sleep(3000);
-        driver.findElement(By.xpath("//input[@type='email']")).sendKeys("mehmetakin0307@gmail.com");
+        driver.findElement(By.xpath("//input[@type='email']")).sendKeys("i>>");
         Thread.sleep(1000);
         driver.findElement(By.xpath("//input[@id='pass']")).sendKeys("pwd");
         Thread.sleep(1000);
         driver.findElement(By.xpath("//input[contains(@type,'ema')]")).clear();
         Thread.sleep(1000);
-        driver.findElement(By.xpath("//input[contains(@type,'ema')]")).sendKeys("contains ema");
+       // driver.findElement(By.xpath("//input[contains(@type,'ema')]")).sendKeys("contains ema");
+        driver.findElement(By.xpath("//input[starts-with(@type,'ema')]")).sendKeys("startswith mai");
         Thread.sleep(1000);
+        driver.findElement(By.xpath("//a[text()='Forgot account?']")).click();
 
     }
 }
