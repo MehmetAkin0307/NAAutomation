@@ -10,6 +10,11 @@ public class PositiveTicketTC {
         driver.findElement(By.xpath("//input[@type='email']")).sendKeys("mehmetakin0307@gmail.com");
         Thread.sleep(1000);
         driver.findElement(By.xpath("//input[@id='pass']")).sendKeys("pwd");
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//input[contains(@type,'ema')]")).clear();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//input[contains(@type,'ema')]")).sendKeys("contains ema");
+        Thread.sleep(1000);
 
     }
 }
