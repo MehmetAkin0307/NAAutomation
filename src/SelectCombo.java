@@ -21,7 +21,7 @@ public class SelectCombo {
         s.selectByIndex(0);
         Thread.sleep(1000);
         s.selectByVisibleText("Business");
-        Thread.sleep(1000);
-        s.deselectAll();
+       // Thread.sleep(1000);
+       // s.deselectAll();
     }
 }
